@@ -16,9 +16,9 @@ after_success:
 branches:
   only:
     - test
-notifications:
-  slack: 
-    rooms:
-      - jweboytm:woLS6D9oasTaWyC1Ks4zqCne
-    on_success: change
-    on_failure: always
+# notifications:
+#   slack: 
+#     rooms:
+#       - jweboytm:woLS6D9oasTaWyC1Ks4zqCne
+#     on_success: change
+#     on_failure: always
