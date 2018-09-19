@@ -13,9 +13,9 @@ install:
 after_success:
   - npm run test
 # 指定分支
-branches:
-  only:
-    - test
+# branches:
+#   only:
+#     - test
 # notifications:
 #   slack: 
 #     rooms:
