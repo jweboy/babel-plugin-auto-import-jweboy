@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-auto-import-jweboy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "按需加载组件文件和样式，满足日常开发需求",
   "main": "lib/index.js",
   "repository": {
