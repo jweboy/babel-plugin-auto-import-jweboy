@@ -15,6 +15,7 @@ after_success:
 # 指定分支
 branches:
   only:
+    - master
     - test
 notifications:
   slack: 
