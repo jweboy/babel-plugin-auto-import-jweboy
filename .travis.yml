@@ -1,15 +1,16 @@
 sudo: enable
 language: node_js
-# node_js:
-#   - "7"
-#   _ "8"
-#   - "9"
-# cache:
-#   directories:
-#     - node_modules
-# install:
-#  - npm install
-#  - npm prune # 移除无关的包(没有在父包的依赖关系列表中列出的包)
+node_js:
+  - "7"
+  _ "8"
+  - "9"
+cache:
+  directories:
+    - node_modules
+# prune 移除无关的包(没有在父包的依赖关系列表中列出的包)
+install:
+ - npm install
+ - npm prune
 # after_success:
 #   - npm run test
 # # 指定分支
