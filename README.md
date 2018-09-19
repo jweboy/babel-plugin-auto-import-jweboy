@@ -1,6 +1,7 @@
 # babel-plugin-auto-import-jweboy
 
 babel模块化导入插件，实现了按需加载的功能来满足常规业务需求。
+[![Build Status](https://travis-ci.com/jweboy/babel-plugin-auto-import-jweboy.svg?branch=test)](https://travis-ci.com/jweboy/babel-plugin-auto-import-jweboy)
 
 ##  Useage
 
