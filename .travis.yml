@@ -1,0 +1,20 @@
+sudo: enable
+language: node_js
+node_js:
+  - "7"
+  _ "8"
+  - "9"
+cache:
+  directories:
+    - node_modules
+install:
+ - npm install
+ - npm prune # 移除无关的包(没有在父包的依赖关系列表中列出的包)
+after_success:
+  - npm run test
+notifications:
+  slack: 
+    rooms:
+      - jweboytm:woLS6D9oasTaWyC1Ks4zqCne
+    on_success: change
+    on_failure: always
