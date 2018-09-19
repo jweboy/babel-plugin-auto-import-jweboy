@@ -17,7 +17,7 @@
     "test": "mocha --compilers js:@babel/register",
     "clean": "rm -rf lib",
     "compile": "babel src -d lib",
-    "prepublish": "npm-run-all --sequential clean compile"
+    "pre-publish": "npm-run-all --sequential clean compile"
   },
   "dependencies": {
     "@babel/helper-module-imports": "^7.0.0",
