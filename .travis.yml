@@ -8,7 +8,6 @@ cache:
     - node_modules
 install:
  - npm install
- - npm prune
 after_success:
   - npm run test
 
