@@ -3,7 +3,6 @@ language: node_js
 node_js:
   - "7"
   _ "8"
-  - "9"
 cache:
   directories:
     - node_modules
@@ -11,15 +10,15 @@ cache:
 install:
  - npm install
  - npm prune
-# after_success:
-#   - npm run test
-# # 指定分支
-# branches:
-#   only:
-#     - test
-# notifications:
-#   slack: 
-#     rooms:
-#       - jweboytm:woLS6D9oasTaWyC1Ks4zqCne
-#     on_success: change
-#     on_failure: always
+after_success:
+  - npm run test
+# 指定分支
+branches:
+  only:
+    - test
+notifications:
+  slack: 
+    rooms:
+      - jweboytm:woLS6D9oasTaWyC1Ks4zqCne
+    on_success: change
+    on_failure: always
